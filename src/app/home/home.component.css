@@ -1,0 +1,17 @@
+.berry-grid {
+  padding: 20px;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit,minmax(23%,1fr));
+}
+
+.berry-grid .button {
+  width: 100%;
+  height: 40px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  line-height: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+

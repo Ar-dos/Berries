@@ -1,0 +1,21 @@
+<div class="details">
+  <div class="box">
+    <div class="container">
+      <ul *ngIf="berry !== undefined">
+        <li> Name - {{berry.name}}</li>
+        <li> Id - {{berry.id}}</li>
+        <li> Size - {{berry.size}}</li>
+        <li> Smoothness - {{berry.smoothness}}</li>
+        <li> Growth_time - {{berry.growth_time}}</li>
+        <li> Max_harvest - {{berry.max_harvest}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="berry-grid">
+  <div *ngFor='let berryName of berryNames'>
+    <button (click) = "openModal(berryName);" class="button"> {{berryName}} </button>
+  </div>
+</div>
+
+
